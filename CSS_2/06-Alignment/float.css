@@ -1,0 +1,29 @@
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col {
+    width: 40%;
+    padding: 0px 10px;
+}
+.col-1 {
+    background-color: lightblue;
+    float: left;
+    /* width: 50%; */
+}
+
+.col-2 {
+    background-color: lightcoral;
+    /* width: 50%; */
+    float: right;
+}
+
+.blank {
+    clear: both;
+}
+
+.div_1 {
+    background-color: lightgreen;
+}
