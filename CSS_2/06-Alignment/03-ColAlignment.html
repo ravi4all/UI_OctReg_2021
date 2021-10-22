@@ -14,12 +14,21 @@
             border: 1px solid red;
             padding: 10px;
         }
-        ul li {
+        ul {
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+        }
+        .nav {
+            margin-bottom: 50px;
+        }
+        ul.nav > li {
             display: inline-block;
             background-color: red;
             margin: 0px 10px;
             width: 15%;
             text-align: center;
+            position: relative;
         }
         ul li a {
             padding: 10px 0px;
@@ -30,21 +39,70 @@
         ul li:hover {
             background-color: #000;
         }
+
+        .dropdown {
+            position: absolute;
+            background-color: gray;
+            width: 100%;
+            left: 0px;
+            display: none;
+        }
+        ul.nav > li:hover .dropdown {
+            display: block;
+        }
     </style>
 </head>
 <body>
 
     <h1>Column Alignment</h1>
 
-    <ul>
+    <ul class="nav">
         <li>
             <a href="#">Home</a>
         </li>
         <li>
             <a href="#">Electronics</a>
+            <div class="dropdown">
+                <ul>
+                    <li>
+                        <a href="#">Cricket</a>
+                    </li>
+                    <li>
+                        <a href="#">Football</a>
+                    </li>
+                    <li>
+                        <a href="#">Hockey</a>
+                    </li>
+                    <li>
+                        <a href="#">Badminton</a>
+                    </li>
+                    <li>
+                        <a href="#">Chess</a>
+                    </li>
+                </ul>
+            </div>
         </li>
         <li>
             <a href="#">Sports</a>
+            <div class="dropdown">
+                <ul>
+                    <li>
+                        <a href="#">Cricket</a>
+                    </li>
+                    <li>
+                        <a href="#">Football</a>
+                    </li>
+                    <li>
+                        <a href="#">Hockey</a>
+                    </li>
+                    <li>
+                        <a href="#">Badminton</a>
+                    </li>
+                    <li>
+                        <a href="#">Chess</a>
+                    </li>
+                </ul>
+            </div>
         </li>
         <li>
             <a href="#">Men</a>
