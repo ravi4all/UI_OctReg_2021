@@ -1,6 +1,11 @@
 body {
     margin: 0px;
 }
+
+a {
+    text-decoration: none;
+}
+
 .left {
     float: left;
 }
@@ -24,4 +29,94 @@ body {
 
 #header {
     background-color: #2874F0;
+    padding: 10px 0px 0px;
+}
+
+#header a {
+    color: #fff;
+}
+
+#header .col-1 {
+    width: 55%;
+}
+
+#header .col-1 .logo {
+    width: 12%;
+    margin-right: 10px;
+}
+#header .col-1 .logo a {
+    font-size: 12px;
+    font-style: italic;
+}
+#header .col-1 .logo a span {
+    margin-top: -2px;
+    display: block;
+}
+#header .col-1 .search {
+    width: 85%;
+    position: relative;
+}
+
+#header .col-1 .search input[type="text"] {
+    width: 99%;
+    height: 35px;
+    border: none;
+}
+#header .col-1 .search button {
+    position: absolute;
+    top: 0px;
+    width: 45px;
+    height: 37px;
+    right: -2px;
+    border: none;
+    background-color: #fff;
+}
+
+#header .col-2 {
+    width: 33%;
+}
+#header .col-2 .row > div {
+    margin: 0px 20px;
+}
+#header .col-2 a, #header .col-2 span {
+    color: #fff;
+    font-size: 20px;
+}
+
+#header .col-2 .login a {
+    background-color: #fff;
+    color: #2874F0;
+    padding: 5px 0px;
+    display: block;
+    width: 120px;
+    text-align: center;
+}
+#header .col-2 .login {
+    padding: 5px 0px 12px;
+}
+#header .col-2 .more, #header .col-2 .cart {
+    padding: 10px 0px;
+}
+
+
+#main-navigation {
+    padding: 10px 0px;
+}
+#main-navigation ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+#main-navigation ul li {
+    display: inline-block;
+    width: 10%;
+    text-align: center;
+    margin: 0px 4px;
+}
+#main-navigation img {
+    width: 50%;
+}
+
+#banner img {
+    max-height: 300px;
 }
