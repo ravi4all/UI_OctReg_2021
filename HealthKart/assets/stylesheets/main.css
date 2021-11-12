@@ -1,6 +1,7 @@
 /* Global Settings */
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: #F7F7F7;
     /* font-family: 'Roboto Slab', serif; */
 }
 
@@ -115,17 +116,82 @@ ul {
 }
 
 /* Main-Navigation */
-#main-nav {
-
+#main-nav .nav-wrapper{
+    position: relative;
 }
-#main-nav ul li {
+#main-nav ul.menu > li {
     display: inline-block;
 }
-#main-nav ul li a {
+#main-nav ul.menu > li > a {
     display: block;
     padding: 15px 20px;
     color: #1d1d1d;
     font-size: 14px;
+}
+
+#main-nav .mega-dropdown {
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    left: 0px;
+    display: none;
+}
+#main-nav .mega-dropdown > ul > li {
+    width: 25%;
+}
+#main-nav .mega-dropdown > ul > li > a{
+    display: block;
+    padding: 20px 10px 20px 30px;
+    color: #009393;
+    background-color: #f2f8f8;
+}
+#main-nav .mega-dropdown > ul > li > a:hover {
+    background-color: #fff;
+}
+#main-nav .mega-dropdown .dropdown {
+    width: 70%;
+    right: 0px;
+    top: 0px;
+    position: absolute;
+    padding: 20px;
+    background-color: #fff;
+    display: none;
+}
+
+#main-nav .mega-dropdown ul li:first-child .dropdown {
+    display: block;
+}
+
+#main-nav .mega-dropdown .dropdown .col{
+    display: inline-block;
+    width: 19%;
+    font-size: 13px;
+    vertical-align: top;
+}
+#main-nav .mega-dropdown .dropdown ul li {
+    margin: 10px 0px;
+}
+#main-nav .mega-dropdown .dropdown h5 {
+    font-size: 14px;
+    color: #00BFBF;
+    font-weight: normal;
+}
+#main-nav .mega-dropdown .dropdown ul li a {
+    color: #1d1d1d;
+}
+#main-nav .mega-dropdown .dropdown ul li:hover a {
+    color: #00BFBF;
+}
+#main-nav ul li:hover .mega-dropdown {
+    display: block;
+}
+
+#main-nav .mega-dropdown ul li:hover .dropdown {
+    display: block;
+}
+
+#banner {
+    margin-bottom: 35px;
 }
 
 /* Content */
@@ -151,3 +217,95 @@ ul {
 
 
 /* Specific CSS */
+
+/* Product */
+.products {
+    background-color: #F8F8F8;
+    /* border: 2px solid #000; */
+    padding: 10px;
+}
+.product {
+    display: inline-block;
+    width: 22%;
+    margin: 0px 5px;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.product .sale-icon {
+    width: 25%;
+}
+.product .sale-left {
+    font-size: 12px;
+    width: 75%;
+}
+
+.product .units-border {
+    background-color: #e2e2ea;
+    height: 4px;
+    position: relative;
+    margin-top: 5px;
+}
+.product .units-border::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    width: 35%;
+    height: 100%;
+    background-color: #fb8c00;
+}
+
+.product .product-img {
+    text-align: center;
+}
+
+.product .product-discount {
+    margin-bottom: 40px;
+}
+.product .product-discount span{
+    border: 1px solid #fb8c00;
+    display: inline-block;
+    padding: 5px 8px;
+    font-size: 13px;
+    color: #fb8c00;
+}
+.product .product-title h4{
+    color: #25292b;
+    font-weight: normal;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.product .product-rating {
+    margin-bottom: 10px;
+}
+
+.product .product-price {
+    margin-bottom: 10px;
+}
+
+.product .product-premium {
+    background-color: rgba(187,234,232,.31);
+    padding: 10px;
+}
+
+.section {
+    margin-bottom: 50px;
+}
+.section .wrapper {
+    box-shadow: 0 2px 3px rgb(0 0 0 / 16%);
+}
+.section .wrapper .header {
+    background-color: #fff;
+    padding: 20px 30px;
+    position: relative;
+}
+.section .wrapper .header:after {
+    content: "";
+    background-color: rgba(0,0,0,.16);
+    position: absolute;
+    width: 94%;
+    height: 1px;
+    left: 3%;
+    bottom: 0px;
+}
