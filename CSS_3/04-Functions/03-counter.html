@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            counter-reset: link;
+        }
+        body {
+            counter-reset: section;
+        }
+        h2::before {
+            counter-increment: section;
+            content : "Section " counter(section) " : ";
+        }
+        a[href] {
+            counter-increment: link;
+        }
+        a[href]:empty::after {
+            content: "[" counter(link) "]";
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Counter</h1>
+
+    <section id="section_1">
+        <h2>Home</h2>
+    </section>
+
+    <section id="section_2">
+        <h2>About</h2>
+    </section>
+
+    <section id="section_3">
+        <h2>Contact</h2>
+    </section>
+
+    <p>
+        Watch this <a href="https://www.google.com"></a> <br>
+        <a href="https://www.google.com">This is a link</a> <br>
+        Watch also <a href="https://www.google.com"></a>
+    </p>
+    
+</body>
+</html>

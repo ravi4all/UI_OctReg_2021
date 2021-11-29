@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            font-size: 40px;
+        }
+        span {
+            font-size: 1.5em;   /* 60px */
+        }
+        #parent {
+            font-size: 20px;
+        }
+        .child {
+            /* font-size: 1.5em;*/  /* 30px */
+            font-size: 1.5rem;
+        }
+        p {
+            margin: 0px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <span>Units in CSS 3</span>
+
+    <!-- px and %
+        em / rem / vw / vh / vmin / vmax
+     -->
+
+     <div id="parent">
+        This is inside parent
+        <div class="child">
+            This is child element of parent
+        </div>
+     </div>
+
+     <p>
+        This is child element of parent
+     </p>
+    
+</body>
+</html>

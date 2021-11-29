@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* header p,
+        section p,
+        footer p {
+            color: red;
+        } */
+
+        :is(header, section, footer) p {
+            color: red;
+        }
+
+        /* h1:has(+ p) {
+            color: red;
+        } */
+        /* a:has(> img) {
+            width: 20%;
+        } */
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>CSS Selectors Level 3</h1>
+    </header>
+    
+
+    <div id="banner">
+        <a href="#">
+            <img src="../images/img_1.png" alt="">
+        </a>
+        <br>
+        
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit veniam quis blanditiis possimus, sequi suscipit culpa doloribus accusamus quas optio amet asperiores, velit sunt vel numquam error voluptas eum molestias!
+        </p>
+    </div>
+
+    <main>
+        <section id="section_1">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo earum nesciunt minima, similique autem sapiente reiciendis? Dolorem, officia consequuntur! Consequatur est mollitia totam porro facilis at, sit dolorem dolore necessitatibus!
+            </p>
+        </section>
+        <section id="section_2">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo earum nesciunt minima, similique autem sapiente reiciendis? Dolorem, officia consequuntur! Consequatur est mollitia totam porro facilis at, sit dolorem dolore necessitatibus!
+            </p>
+        </section>
+        <section id="section_3">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo earum nesciunt minima, similique autem sapiente reiciendis? Dolorem, officia consequuntur! Consequatur est mollitia totam porro facilis at, sit dolorem dolore necessitatibus!
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam rerum atque omnis dolorem ea beatae esse aliquam perspiciatis ipsam illo! Veniam natus quod eum repellat officia cumque dolore placeat molestias.
+        </p>
+    </footer>
+    
+</body>
+</html>
