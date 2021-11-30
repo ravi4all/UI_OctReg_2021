@@ -1,0 +1,25 @@
+Animations - 2D + 3D
+
+Transformations
+- Translate
+  - move object along x, y and z axis
+- Rotate
+  - rotate object on x, y and z axis
+- Scale
+  - zoom in and zoom out effect
+- Skew
+  - skew along x and y axis
+- Matrix - Shorthand for transformations
+
+Perspective
+- Way to view an object - 2D View or 3D View
+
+Transitions
+- Timing / Duration of transformations
+
+Animations Using Keyframes
+- For continuous animations
+
+
+
+
