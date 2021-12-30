@@ -1,0 +1,46 @@
+body {
+    font-family: 'Titillium Web', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+#topbar {
+    background-color: #FFFFFF;
+    padding: 5px 0px;
+}
+#topbar .ipl-dates span {
+    color: #1c1c1c;
+    font-size: 14px;
+    font-weight: bold;
+}
+#topbar .ipl-dates span:last-child {
+    color: #525252;
+    margin-left: 15px;
+}
+
+#topbar .bcci-logo a {
+    color: #5e5e5e;
+    font-weight: 600;
+    font-size: 14px;
+}
+#topbar .bcci-logo a:hover {
+    color: #111;
+}
+
+.sociable {
+    display: flex;
+    justify-content: space-between;
+}
+.sociable li a {
+    color: #a8a8a8;
+}
+.sociable li:first-child {
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600;
+}
