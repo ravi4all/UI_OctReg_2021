@@ -1,0 +1,30 @@
+.row {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 15% 60% 15%;
+    grid-template-areas: 
+    "logo nav login"
+    "logo search login";
+}
+.col {
+    padding: 10px;
+}
+.logo {
+    border: 1px solid blue;
+    grid-area: logo;
+}
+
+#main-nav {
+    border: 1px solid red;
+    grid-area: nav;
+}
+
+.search {
+    border: 1px solid black;
+    grid-area: search;
+}
+
+.login {
+    border: 1px solid gray;
+    grid-area: login;
+}

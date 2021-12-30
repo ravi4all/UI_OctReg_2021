@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Above 1400px - Large PC */
+        /* Above 1200px - PC/Laptop */
+        /* Above 992px  - Notebooks/Laptops */
+        /* Above 768px  - Tabs / Landscape */
+        /* Above 576px  - Mobile Landscape */
+        /* Below 576px  - Mobile Portrait */
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        .col {
+            border: 1px solid red;
+            padding: 10px;
+            width: 20%;
+        }
+        @media(max-width:992px) {
+            .col {
+                width: 45%;
+                margin-bottom: 20px;
+            }
+        }
+        @media(max-width:576px) {
+            .col {
+                width: 95%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Media Queries</h1>
+
+    <div class="row">
+        <div class="col col-1">
+            <h2>This is column_1</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto dolorem nisi et architecto nemo ad quam nam nulla laboriosam rem hic amet veritatis, animi quae perspiciatis non excepturi ratione aut!
+            </p>
+        </div>
+        <div class="col col-2">
+            <h2>This is column_2</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto dolorem nisi et architecto nemo ad quam nam nulla laboriosam rem hic amet veritatis, animi quae perspiciatis non excepturi ratione aut!
+            </p>
+        </div>
+        <div class="col col-3">
+            <h2>This is column_3</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto dolorem nisi et architecto nemo ad quam nam nulla laboriosam rem hic amet veritatis, animi quae perspiciatis non excepturi ratione aut!
+            </p>
+        </div>
+        <div class="col col-4">
+            <h2>This is column_4</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto dolorem nisi et architecto nemo ad quam nam nulla laboriosam rem hic amet veritatis, animi quae perspiciatis non excepturi ratione aut!
+            </p>
+        </div>
+    </div>
+    
+</body>
+</html>

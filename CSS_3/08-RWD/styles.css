@@ -1,0 +1,25 @@
+.row {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    justify-content: center;
+    /* gap: 20px; */
+}
+
+.col {
+    background-color: lightgray;
+    border: 1px solid red;
+    padding: 15px;
+}
+
+.col-1 {
+    /* grid-column-start: 1;
+    grid-column-end: 4; */
+    /* grid-column: 1/4; */
+
+    /* grid-row-start: 1;
+    grid-row-end: 3; */
+    /* grid-row: 1/3; */
+    
+    /* grid-row-start / grid-col-start / grid-row-end / grid-col-end */
+    grid-area: 1 / 1  / 3 / 4;
+}

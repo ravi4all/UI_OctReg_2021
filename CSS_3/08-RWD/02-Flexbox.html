@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0px;
+        }
+        .row {
+            display: flex;
+            /* justify-content: center; */
+            /* justify-content: space-around; */
+            justify-content: space-evenly;
+            /* justify-content: space-between; */
+            /* align-items: center; */
+            /* align-items: stretch; */
+            align-items: flex-start;
+            /* align-items: flex-end; */
+        }
+        .col {
+            border: 1px solid red;
+            background-color: lightgray;
+            padding: 20px;
+        }
+        .col-1 {
+            /* width: 17%; */
+            flex-basis: 17%;
+            align-self: center;
+        }
+        .col-2 {
+            /* width: 45%; */
+            flex-basis: 45%;
+            flex-grow: 0.5;
+        }
+        .col-3 {
+            /* width: 20%; */
+            flex-basis: 20%;
+        }
+        img {
+            width: 100%;
+        }
+        ul {
+            list-style: none;
+            margin: 0px;
+            padding: 0px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        ul li {
+            height: 300px;
+            width: 250px;
+            margin: 10px;
+            background-color: red;
+            border: 1px solid;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Flexbox</h1>
+
+    <div class="row">
+        <div class="col-1 col">
+            <h2>This is column_1</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas sint, facere voluptates laborum dolores officia reprehenderit provident rem harum expedita praesentium delectus, deserunt libero animi! Explicabo voluptate cumque recusandae neque!
+            </p>
+        </div>
+        <div class="col-2 col">
+            <h2>This is column_2</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas sint, facere voluptates laborum dolores officia reprehenderit provident rem harum expedita praesentium delectus, deserunt libero animi! Explicabo voluptate cumque recusandae neque!
+            </p>
+            <img src="../images/WebImages/batman_arkham_knight-1366x768.jpg" alt="">
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam iusto reprehenderit vitae nostrum accusamus voluptatum saepe dignissimos aliquid. Explicabo velit cum illum deleniti et perspiciatis officiis minima vero nisi necessitatibus? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur aut soluta quo iste cumque distinctio optio cupiditate natus cum sit! Quis vitae vero odio voluptate dolor praesentium, omnis et cum?
+            </p>
+        </div>
+        <div class="col-3 col">
+            <h2>This is column_3</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas sint, facere voluptates laborum dolores officia reprehenderit provident rem harum expedita praesentium delectus, deserunt libero animi! Explicabo voluptate cumque recusandae neque!
+            </p>
+        </div>
+    </div>
+
+    <hr>
+
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    
+</body>
+</html>
