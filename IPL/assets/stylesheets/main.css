@@ -6,12 +6,19 @@ a {
 }
 
 ul {
+    margin: 0px;
+    padding: 0px;
     list-style: none;
+}
+
+.secondary-container {
+    width: 1400px;
+    margin: 0 auto;
 }
 
 #topbar {
     background-color: #FFFFFF;
-    padding: 5px 0px;
+    /* padding: 5px 0px; */
 }
 #topbar .ipl-dates span {
     color: #1c1c1c;
@@ -43,4 +50,57 @@ ul {
     text-transform: uppercase;
     font-size: 13px;
     font-weight: 600;
+}
+
+/* 
+* Header 
+*/
+#header {
+    background: linear-gradient(92.04deg,#18184a 24.18%,#19398a 50.95%,#18184a 110.32%);
+}
+
+/* 
+* Main Navigation
+*/
+#main-navigation {
+
+}
+#main-navigation > ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#main-navigation > ul > li > a {
+    color: #fff;
+    display: block;
+    padding: 17px 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#secondary-nav {
+    background: linear-gradient(90.15deg,#ef4123 -4.45%,#ef7923 52.36%,#ef4123 118.57%);
+}
+#secondary-nav ul {
+    display: flex;
+}
+#secondary-nav ul li {
+    margin: 0px 20px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 7px 0px;
+}
+#secondary-nav ul li:first-child {
+    text-transform: uppercase;
+    font-style: italic;
+}
+#secondary-nav ul li:first-child img {
+    width: 20%;
+}
+#secondary-nav ul li a{
+    color: #fff;
+}
+#secondary-nav ul li a i {
+    margin-left: 20px;
 }
