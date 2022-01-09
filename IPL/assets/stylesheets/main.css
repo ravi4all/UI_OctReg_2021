@@ -11,9 +11,11 @@ ul {
     list-style: none;
 }
 
-.secondary-container {
-    width: 1400px;
-    margin: 0 auto;
+@media(max-width:1460px) {
+    .secondary-container {
+        width: 1400px;
+        margin: 0 auto;
+    }
 }
 
 #topbar {
@@ -108,6 +110,7 @@ ul {
     text-align: center;
     border-radius: 5px;
     display: none;
+    z-index: 10;
     /* overflow: hidden; */
 }
 #main-navigation .dropdown ul li a {
@@ -259,4 +262,77 @@ ul {
 }
 .points-table .loss {
     background-color: red;
+}
+
+#top-videos, #top-highlights {
+    background-size: 100% 100%;
+    padding: 40px 0px;
+    overflow: hidden;
+}
+
+/* Top Videos */
+#top-videos {
+    background-image: url("https://www.iplt20.com/assets/images/latest-bg.png");
+}
+#top-videos h2 {
+    color: #EA4022;
+}
+
+
+/* Top Highlights */
+#top-highlights {
+    background-image: url("https://www.iplt20.com/assets/images/TopHighlights-bg.jpg");
+}
+#top-highlights h2{
+    color: #fff;
+}
+
+.section h2 {
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.section .custom-row {
+    display: flex;
+    width: 250%;
+}
+.section .custom-row .custom-col {
+    width: 10%;
+    margin: 0px 10px;
+}
+.section .custom-row img {
+    width: 100%;
+    max-height: 183px;
+}
+.section .custom-col .box {
+    border: 6px solid transparent;
+    background: linear-gradient(140.76deg,rgba(255,255,255,.6) -17.17%,rgba(177,184,192,.6) 142.13%) border-box;
+    border-radius: 5px;
+    position: relative;
+}
+.section .custom-col .box .text {
+    background-color: #fff;
+    padding: 5px 0px 30px;
+}
+.section .custom-col .image {
+    overflow: hidden;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.section .custom-col .image img { 
+    transition: 0.5s;
+}
+.section .custom-col .image:hover img {
+    transform: scale(1.2,1.2);
+}
+.section .custom-col:hover .text {
+    background: linear-gradient(92.04deg,#18184a 24.18%,#19398a 50.95%,#18184a 110.32%);
+    color: #fff;
+}
+
+.section .box .play-icon {
+    position: absolute;
+    width: 15%;
+    left: calc(50% - 7.5%);
+    top: calc(50% + 3%);
 }
