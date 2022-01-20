@@ -11,3 +11,6 @@ table {
 .btn:hover {
     background-color: lightcoral;
 }
+.btn:disabled {
+    color: #000;
+}
