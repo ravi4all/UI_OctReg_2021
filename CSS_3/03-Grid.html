@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .row {
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+        }
+        img {
+            width: 100%;
+            height: inherit;
+            object-fit: contain;
+        }
+        .col {
+            border: 1px solid red;
+            border-radius: 10px;
+            height: 200px;
+            text-align: center;
+            margin: 10px;
+        }
+        .col-1 {
+            /* grid-column-start: 1;
+            grid-column-end: 3; */
+            grid-column: 1/3;
+        }
+        /* .col-4 {
+            grid-row-start: 2;
+            grid-row-end: 4;
+        } */
+        .col-9 {
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>CSS Grid</h1>
+
+    <div class="row">
+        <div class="col col-1">
+            <h2>Previous Winner</h2>
+            <h4>2012 Winner</h4>
+        </div>
+        <div class="col col-2">
+            <h2>89 <br> Fifties</h2>
+        </div>
+        <div class="col col-3">
+            <h2>192 <br> Runs</h2>
+            <p>
+                Chennai Super Kings Won By 27 Runs held on Friday 15 Oct 2021
+            </p>
+        </div>
+        <div class="col col-4">
+            <img src="../../images/WebImages/dhoni_img.jpg" alt="">
+        </div>
+        <div class="col col-5">
+            <img src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/playerheadshot/ipl/210/157.png" alt="">
+        </div>
+        <div class="col col-6">
+            <h2>1548 <br> Fifties</h2>
+        </div>
+        <div class="col col-7">
+            <h2>687 <br> Fifties</h2>
+        </div>
+        <div class="col col-8">
+            <img src="../../images/WebImages/Iron-Man-3-2013-Wallpaper.jpg" alt="">
+        </div>
+        <div class="col col-9">
+            <h2>Interesting Facts</h2>
+            <p>
+                <b>
+                    " Chennai Super Kings holds the record for most Fair Play awards won in IPL history. "
+                </b>
+            </p>
+        </div>
+        <div class="col col-10">
+            <img src="../../images/WebImages/Iron-Man-3-2013-Wallpaper.jpg" alt="">
+        </div>
+    </div>
+    
+</body>
+</html>
