@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            overflow: hidden;
+            position: relative;
+            height: 600px;
+            transition-duration: 2s;
+        }
+        img {
+            width: 100%;
+            height: 600px;
+            transition-duration: 0.2s;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Mouse Move</h1>
+
+    <div onmousemove="animateImage()">
+        <img id="image" src="../../images/WebImages/avengers-thor.jpg" alt="">
+    </div>
+    
+    <script>
+        function animateImage() {
+            var img = document.querySelector("#image");
+            var mouseX = event.clientX
+            var mouseY = event.clientY;
+            console.log(mouseX, mouseY);
+            img.style.transform = 'translate(-' + 0.1 * mouseX + 'px,' + (-mouseY * 0.2) + 'px)';
+        }   
+    </script>
+</body>
+</html>

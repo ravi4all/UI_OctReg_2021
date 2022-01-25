@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            width: 100%;
+            transition: 2s;
+            transform: translateX(-200%);
+        }
+        div {
+            margin-bottom: 100px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Scroll Event</h1>
+
+    <div>
+        <img src="../../images/WebImages/awesome-wallpapers-6482-6759-hd-wallpapers.jpg" alt="">
+    </div>
+
+    <div>
+        <img src="../../images/WebImages/awesome-wallpapers-6482-6759-hd-wallpapers.jpg" alt="">
+    </div>
+
+    <div>
+        <img src="../../images/WebImages/awesome-wallpapers-6482-6759-hd-wallpapers.jpg" alt="">
+    </div>
+
+    <div>
+        <img src="../../images/WebImages/awesome-wallpapers-6482-6759-hd-wallpapers.jpg" alt="">
+    </div>
+
+    <div>
+        <img src="../../images/WebImages/awesome-wallpapers-6482-6759-hd-wallpapers.jpg" alt="">
+    </div>
+    
+    <script>
+        window.addEventListener("scroll", scrollAnimation);
+        var allDiv = document.querySelectorAll("div");
+        var allImg = document.querySelectorAll("img");
+        function scrollAnimation() {
+            var scroll_y = window.scrollY;
+            var div_1 = allDiv[1];
+            var img_1 = allImg[1];
+            var x = div_1.offsetTop;
+            // console.log(scroll_y);
+            var newScrollPos = x - scroll_y;
+            // console.log(newScrollPos);
+            if(newScrollPos < 500) {
+                img_1.style.transform = 'translateX(0%)';
+            }
+            else {
+                img_1.style.transform = 'translateX(-200%)';
+            }
+        }
+    </script>
+</body>
+</html>
