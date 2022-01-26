@@ -1,0 +1,31 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+section {
+    padding-top: 20px;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+#list-1 {
+    display: flex;
+}
+#list-1 li {
+    width: 25%;
+    text-align: center;
+}
+#list-1 li h4 {
+    font-size: 18px;
+    margin-top: 10px;
+}
