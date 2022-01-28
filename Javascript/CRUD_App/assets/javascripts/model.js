@@ -11,6 +11,7 @@ class Item {
         this.name = name;
         this.price = price;
         this.img = img;
+        this.flag = true;
     }
 }
 
@@ -22,8 +23,16 @@ var object = {
         console.log(this.cartItems);
     },
 
-    deleteProduct : function() {
-
+    deleteProduct : function(id) {
+        console.log("Deleting... "+id);
+        var product = this.cartItems.filter(function(obj) {
+                return obj.id == id;
+        });
+        product[0].flag = false;
+        
+        this.cartItems = this.cartItems.filter(function(obj) {
+            return obj.flag == true;
+        });
     },
 
     searchProduct : function() {

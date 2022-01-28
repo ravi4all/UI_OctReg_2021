@@ -1,7 +1,10 @@
 window.addEventListener("load", initEvents);
 
 function initEvents() {
+    var saveBtn = document.querySelector("#save");
+    saveBtn.addEventListener("click", saveToLocalStorage);
     loadProducts();
+    loadFromLocalStorage();
 }
 
 function loadProducts() {
@@ -73,15 +76,37 @@ function showCart() {
         h6.innerHTML = obj.name;
         var p = document.createElement("p");
         p.innerHTML = "<b>Price</b> : " + obj.price;
-        // var button = document.createElement("button");
-        // button.innerText = "Add to Cart";
-        // button.className = "btn btn-primary w-100";
-        // button.setAttribute('title', obj.p_id);
+        var button = document.createElement("button");
+        button.innerText = "Delete";
+        button.className = "btn btn-primary";
+        button.setAttribute('title', obj.id);
         li.appendChild(imgWrapper);
         li.appendChild(h6);
         li.appendChild(p);
-        // li.appendChild(button);
+        li.appendChild(button);
         list_1.appendChild(li);
-        // button.addEventListener("click", addToCart);
+        button.addEventListener("click", deleteFromCart);
     });
+}
+
+function deleteFromCart() {
+    object.deleteProduct(this.title);
+    showCart();
+}
+
+function saveToLocalStorage() {
+    if(window.localStorage) {
+        // JSON.stringify - convert array of object into string
+        var data = JSON.stringify(object.cartItems);
+        localStorage.setItem('products', data);
+    }
+}
+
+function loadFromLocalStorage() {
+    if(window.localStorage) {
+        if(localStorage.products) {
+            object.cartItems = JSON.parse(localStorage.getItem("products"));
+            showCart();
+        }
+    }
 }
