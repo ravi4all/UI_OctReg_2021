@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="cricket-data"></div>
+
+    <div id="weather-report"></div>
+
+    <div id="stock"></div>
+
+    <div id="live-covid"></div>
+
+    <div id="news"></div>
+    
+    <script>
+        window.addEventListener("load", loadServices);
+        function loadServices() {
+            setTimeout(function() {
+                cricket();
+            }, 4000);
+            
+            setTimeout(function() {
+                weather();
+            },1000);
+
+            stock();
+            live_covid();
+            news_data();
+        }
+        function cricket() {
+            for(var i = 0; i < 1000; i++) {
+                var k = i + 1;
+            }
+            console.log("Cricket Data Loaded...");
+        }
+
+        function weather() {
+            console.log("Weather Data Loaded...");
+        }
+
+        function stock() {
+            console.log("Stock Data Loaded...");
+        }
+
+        function live_covid() {
+            console.log("Live Covid Data Loaded...");
+        }
+
+        function news_data() {
+            console.log("News Data Loaded...");
+        }
+    </script>
+</body>
+</html>
